@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Home | Phoenix</title>
+  <meta name="author" content="Vitor Delabenetta">
+  <meta name="description" content="Página de inicialização do navegador">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./stylesheet/style.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheet/pages/home.css">
+</head>
+<body>
+  <main>
+      <img id="image-background" src="./assets/images/background.jpg" alt="background-image">
+    <div id="content">
+      <section id="container-left">
+        <div id="info-top">
+          <p class="text-medium" id="display-weather">clima</p>
+          <p class="text-bold" id="display-time">horas</p>
+          <p class="text-medium" id="display-date">data</p>
+        </div>
+        <form id="search-google" action="https://www.google.com/search">
+          <input class="text-light" type="text" name="q" id="search-input" list="suggestions" placeholder="Search with Google" autocomplete="on">
+        </form>
+        <div id="info-bottom">
+            <p class="text-light">intagram: ctrl + shift + i</p>
+            <p class="text-light">whatsapp: ctrl + shift + z</p>
+            <p class="text-light">youtube: ctrl + shift + y</p>
+        </div>
+      </section>
+      <section id="container-right">
+        <div class="linked-selection">
+          <img class="icon-whatsapp" src="./assets/icons/whatsapp.svg" alt="whatsapp-icon">
+          <a href="https://web.whatsapp.com/" class="text-regular">Whatsapp</a>
+        </div>
+        <div class="linked-selection">
+          <img class="icon-github" src="./assets/icons/github.svg" alt="github-icon">
+          <a href="https://github.com/VitorDelabenetta" class="text-regular">GitHub</a>
+        </div>
+        <div class="linked-selection">
+          <img class="icon-linkedin" src="./assets/icons/linkedin.svg" alt="linkedin-icon">
+          <a href="https://www.linkedin.com/in/gabriel-delabenetta/" class="text-regular">LinkedIn</a>
+        </div>
+        <div class="linked-selection">
+          <img class="icon-instagram" src="./assets/icons/instagram.svg" alt="instagram-icon">
+          <a href="https://www.instagram.com/" class="text-regular">Instagram</a>
+        </div>
+          <div id="horizontal-line"></div>
+        <div class="linked-selection">
+          <img class="icon-bitwarden" src="./assets/icons/bitwarden.svg" alt="bitwarden-icon">
+          <a href="https://vault.bitwarden.com/#/login" class="text-regular">Bitwarden</a>
+        </div>
+        <div class="linked-selection">
+          <img class="icon-uniasselvi" src="./assets/icons/uniasselvi.svg" alt="uniasselvi-icon">
+          <a href="https://ava2.uniasselvi.com.br/home" class="text-regular">Uniasselvi</a>
+        </div>
+        <div class="linked-selection">
+          <img class="icon-notion" src="./assets/icons/notion.svg" alt="notion-icon">
+          <a href="https://www.notion.so/delabenetta/Programming-Studies-1b8c3bb67fce80e0bc49c271feae0255" class="text-regular">Notion</a>
+        </div>
+        <div class="linked-selection">
+          <img class="icon-trabalhos" src="./assets/icons/study.svg" alt="studies-icon">
+          <p class="text-regular">Trabalhos</p>
+        </div>
+        <div id="ident-linked-selection">
+          <div class="linked-selection">
+            <img class="icon-microsoft" src="./assets/icons/microsoft.svg" alt="microsoft-icon">
+            <a href="https://word.cloud.microsoft/?wdOrigin=MARKETING.WORD.SIGNIN" class="text-regular">Microsoft</a>
+          </div>
+          <div class="linked-selection">
+            <img class="icon-drive" src="./assets/icons/drive.svg" alt="google-drive-icon">
+            <a href="https://drive.google.com/drive/home" class="text-regular">Google Drive</a>
+          </div>
+          <div class="linked-selection">
+            <img class="icon-document" src="./assets/icons/document.svg" alt="document-icon">
+            <a href="https://word.cloud.microsoft/open/onedrive/?docId=ABAB0200EE193B4%21sa75d9cc865ef448eb691d772f93c48df&driveId=0ABAB0200EE193B4" class="text-regular">Homework .Doc</a>
+         </div>
+          <div class="linked-selection">
+            <img class="icon-folders" src="./assets/icons/folders.svg" alt="folders-icon">
+            <a href="/home/gabriel-delabenetta/Documents/" class="text-regular">Local Folders</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="./javascript/script.js"></script>
+</body>
+</html>

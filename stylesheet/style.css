@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  /* cores */
+  --branco: #EEE8D5;
+  --cinza: #93A1A1;
+  --verde-escuro: #002B36;
+  --verde-translucido: #002B36B7;
+  --verde-claro: #073642;
+}
+
+::selection {
+  background-color: var(--verde-escuro);
+  color: var(--cinza);
+}
+
+@font-face {
+  font-family: "light";
+  font-weight: lighter;
+  src: url(".././assets/fonts/light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "regular";
+  font-weight: normal;
+  src: url(".././assets/fonts/regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "medium";
+  font-weight: medium;
+  src: url(".././assets/fonts/medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bold";
+  font-weight: bold;
+  src: url(".././assets/fonts/semibold.ttf") format("truetype");
+}
+
+/* Fontes do Projeto */
+
+[class*="text-"] {
+  color: var(--branco);
+}
+
+.text-light {
+  font-family: "light";
+  font-size: 20px;
+}
+
+.text-regular {
+  font-family: "regular";
+  font-size: 20px;
+}
+
+.text-medium {
+  font-family: "medium";
+  font-size: 35px;
+}
+
+.text-bold {
+  font-family: "bold";
+  font-size: 90px;
+}
+
+/* Icones */
+
+[class*="icon-"] {
+  height: 25px;
+}
