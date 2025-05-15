@@ -70,12 +70,9 @@ document.addEventListener("keydown", function(event) {
 
 // API para o Clima:
 
-// const latitude = -26.9528864;
-// const longitude = -49.0716105;
-
 navigator.geolocation.getCurrentPosition(( position => {
-  let latitude = position.coords.latitude;
-  let longitude = position.coords.longitude;
+  var latitude = position.coords.latitude;
+  var longitude = position.coords.longitude;
   get_weather(latitude, longitude)
 }));
 
@@ -83,20 +80,18 @@ const get_weather = (latitude, longitude) => {
 const api_key = "b5d130705f23070121b346a33a7d08e5";
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${api_key}`;
 
-  fetch(url).
-  then(response => response.json())
-  .then(weather => {
+fetch(url).then(response => response.json()).then(weather => {
 
-    const display_weather = document.getElementById("display-weather");
+  const display_weather = document.getElementById("display-weather");
     
-    var sky_description = weather.weather[0].description;
-    const formatted_description = sky_description[0].toUpperCase() + sky_description.substring(1);
+  var sky_description = weather.weather[0].description;
+  const formatted_description = sky_description[0].toUpperCase() + sky_description.substring(1);
 
-    display_weather.innerText = `${weather.name}` + ", " + formatted_description + " (" + `${Math.round(weather.main.temp)}℃)`;
-    // Caso precise mostrar a cidade, adicionar:`${weather.name}`
+  display_weather.innerText = formatted_description + " (" + `${Math.round(weather.main.temp)}℃)`;
+  // Caso precise mostrar a cidade, adicionar:`${weather.name}`
 
-  }).catch(error => {
-    const info_error = document.getElementById("criar elemento para mostrar erros em obter dados");
-    info_error.innerText = error;
+}).catch(error => {
+    const info_error = document.getElementById("display_weather");
+    display_weather.innerText = error;
   })
 }
