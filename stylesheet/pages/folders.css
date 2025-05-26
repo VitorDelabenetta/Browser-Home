@@ -1,0 +1,68 @@
+@keyframes color_load {
+  0% {
+    width: 0vw;
+    transform: translateX(-100%);
+  }
+  100% {
+    width: 100vw;
+    transform: translateX(0);
+  }
+}
+
+main {
+  animation: 1s ease-in color_load;
+  background-color: var(--verde-escuro);
+  height: 100vh;
+  width: 100vw;
+}
+
+#folders-content {
+  display: none;
+  flex-direction: column;
+  margin-left: 10vw;
+}
+
+#folders-title {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 80px 0;
+  gap: 15px;
+}
+
+#folders-archives {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Icones */
+
+.linked-selection {
+  display: flex;
+  gap: 35px;
+}
+
+#horizontal-line {
+  width: 40vw;
+  height: 2px;
+  background-color: var(--branco);
+}
+
+#ident-linked-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 40px;
+}
+
+/* Links */
+
+.linked-selection span, a {
+  background: linear-gradient(var(--branco)) bottom left/ var(--underline-width, 0%) 2px no-repeat;
+  transition: background-size 0.85s;
+}
+
+.linked-selection span:hover, a:hover {
+  --underline-width: 100%;
+  cursor: pointer;
+}
