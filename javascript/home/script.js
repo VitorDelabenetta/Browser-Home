@@ -92,6 +92,6 @@ fetch(url).then(response => response.json()).then(weather => {
 
 }).catch(error => {
     const info_error = document.getElementById("display_weather");
-    display_weather.innerText = error;
+    info_error.innerText = error;
   })
 }

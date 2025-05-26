@@ -107,11 +107,12 @@ section {
 
 /* Links */
 
-.linked-selection p, a {
+.linked-selection span, a {
   background: linear-gradient(var(--branco)) bottom left/ var(--underline-width, 0%) 2px no-repeat;
   transition: background-size 0.85s;
 }
 
-.linked-selection p:hover, a:hover {
+.linked-selection span:hover, a:hover {
   --underline-width: 100%;
+  cursor: pointer;
 }
