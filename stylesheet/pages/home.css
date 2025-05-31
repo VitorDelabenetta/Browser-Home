@@ -57,6 +57,12 @@ section {
 
 #info-top {
   align-items: center;
+  min-width: 450px;
+  min-height: 225px;
+}
+
+#display-weather {
+  min-height: 60px;
 }
 
 #info-bottom {
